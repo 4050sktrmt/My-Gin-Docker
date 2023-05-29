@@ -17,5 +17,5 @@ jobs:
     - name: Run tests
       run: |
         go mod download
-        go get github.com/stretchr/testify/assert
+        go get -U github.com/stretchr/testify/assert
         go test
