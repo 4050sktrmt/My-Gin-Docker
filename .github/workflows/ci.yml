@@ -18,7 +18,7 @@ jobs:
       run: sleep 30
 
     - name: install gin test tools
-      run: docker-compose exec gin go get github.com/stretchr/testify/assert 
+      run: docker-compose exec -T gin go get github.com/stretchr/testify/assert 
     
     - name: go test
-      run: docker-compose exec gin go test
+      run: docker-compose exec -T gin go test
